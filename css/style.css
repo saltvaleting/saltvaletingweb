@@ -477,11 +477,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* -- About Img -- */
 .about-img {
-	margin-top:100px;
+	margin-top:0px;
 }
 
 .about-img > img {
-	width:100%;
+	width:50%;
 }
 
 /* -- About Video -- */
@@ -524,7 +524,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 /* ------ GALLERY -------- */
 
 #gallery-container{
-    margin-top: 240px;
+    margin-top: 100px;
     animation-delay: .5s;
 }
 
@@ -566,7 +566,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
@@ -587,7 +586,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* The Close Button */
 .close {
-    color: white;
+    color: red;
     position: absolute;
     top: 110px;
     right: 70px;

@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Contact</title>
+		<title>Gallery</title>
 
 		<!-- Google font -->
         <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
@@ -20,6 +20,8 @@
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+            <link type="text/css" href="css/lightbox.css" rel="stylesheet">
+
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,7 +72,7 @@
 		<div class="hero-area section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/contact.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/ppp.jpg)"></div>
 			<!-- /Backgound Image -->
 
 			<div class="container">
@@ -78,9 +80,9 @@
 					<div class="col-md-10 col-md-offset-1 text-center">
 						<ul class="hero-area-tree">
 							<li><a href="index.html">Home</a></li>
-							<li>Contact</li>
+							<li>Gallery</li>
 						</ul>
-						<h1 class="white-text">Get In Touch</h1>
+						<h1 class="white-text">View my work</h1>
 
 					</div>
 				</div>
@@ -89,33 +91,18 @@
 		</div>
 		<!-- /Hero-area -->
 
-		<!-- Contact -->
-		<div id="contact" class="section">
-
-			<!-- container -->
-			<div class="container">
-
-
-
-					<!-- contact information -->
-                <center>
-                						<img src="img/logo.png" height="220px">
-
-						<h4>Contact Information</h4>
-						<ul class="contact-details">
-                            <li><i class="fa fa-envelope"></i>hello@saltvaleting.com</li>
-							<li><i class="fa fa-phone"></i>07713 558513</li>
-							<li><i class="fa fa-map-marker"></i>Blackisland Road, Annaghmore</li>
-						</ul>
-                    </center>
-			
-					<!-- contact information -->
-
-			</div>
-			<!-- /container -->
-
-		<!-- /Contact -->
-
+		    <center>
+        <div id="gallery-container" class="animated item fadeIn">   
+    <a href="img/capri1.jpg" data-lightbox="roadtrip" data-title="Ford Capri 2L S"><img src="img/capri1.jpg"></a>
+    <a href="img/capri2.jpg" data-lightbox="roadtrip" data-title="Ford Capri 2L S"><img src="img/capri2.jpg"></a>
+    <a href="img/capri3.jpg" data-lightbox="roadtrip" data-title="Ford Capri 2L S"><img src="img/capri3.jpg"></a>
+    <a href="img/a51.jpg" data-lightbox="roadtrip" data-title="Audi a5 3.0 Quattro"><img src="img/a51.jpg"></a>
+    <a href="img/a52.jpg" data-lightbox="roadtrip" data-title="Audi a5 3.0 Quattro"><img src="img/a52.jpg"></a>
+    <a href="img/a53.jpg" data-lightbox="roadtrip" data-title="Audi a5 3.0 Quattro"><img src="img/a53.jpg"></a>
+        </div>
+    </center>
+        
+        
 		<!-- Footer -->
 		<footer id="footer" class="section">
 
@@ -164,6 +151,8 @@
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 		<script type="text/javascript" src="js/google-map.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+            <script src="js/lightbox.js"></script>
+
 
 	</body>
 </html>
