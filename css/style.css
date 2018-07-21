@@ -370,17 +370,17 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar-toggle > span , .navbar-toggle > span:before , .navbar-toggle > span:after {
-	height: 2px;
-	width: 25px;
+	height: 2.4px;
+	width: 21px;
 	background-color:#009fe3;
 }
 
 .navbar-toggle > span:before {
-	top: -10px;
+	top: -7px;
 }
 
 .navbar-toggle > span:after {
-	top: 10px;
+	top: 7px;
 }
 
 #header.nav-collapse .navbar-toggle > span {
@@ -388,15 +388,15 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 #header.nav-collapse .navbar-toggle > span:before {
-    -webkit-transform: translateY(10px) rotate(45deg);
-        -ms-transform: translateY(10px) rotate(45deg);
-            transform: translateY(10px) rotate(45deg);
+    -webkit-transform: translateY(7px) rotate(45deg);
+        -ms-transform: translateY(7px) rotate(45deg);
+            transform: translateY(7px) rotate(45deg);
 }
 
 #header.nav-collapse .navbar-toggle > span:after {
-    -webkit-transform: translateY(-10px) rotate(-45deg);
-        -ms-transform: translateY(-10px) rotate(-45deg);
-            transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-7px) rotate(-45deg);
+        -ms-transform: translateY(-7px) rotate(-45deg);
+            transform: translateY(-7px) rotate(-45deg);
 }
 
 /*------------------------------------*\
@@ -481,7 +481,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .about-img > img {
-	width:50%;
+	width:45%;
 }
 
 /* -- About Video -- */
@@ -521,163 +521,89 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	color:#009fe3;
 }
 
-/* ------ GALLERY -------- */
+/* ------ G A L L E R Y -------- */
 
-#gallery-container{
-    margin-top: 100px;
-    animation-delay: .5s;
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
 }
 
-#gallery-container img{
-    height: 200px;
-    margin: 20px;
-    transition: .3s ease;
-}
-
-#gallery-container img:hover{
-    -webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.08);
-    -moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.08);
-    box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.08);
-    transform: scale(1.2);
-    transition: .3s ease;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #333;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-    color: red;
-    position: absolute;
-    top: 110px;
-    right: 70px;
-    font-size: 40px;
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
     font-weight: bold;
-    transition: .2s ease;
 }
 
-.close:hover,
-.close:focus {
-  color: #f44259;
-  text-decoration: none;
-  cursor: pointer;
-  transition: .2s ease;
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
 }
 
-.mySlides {
-  display: none;
+.tz-gallery {
+    padding: 40px;
 }
 
-.cursor {
-  cursor: pointer
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.column img {
-  margin-bottom: -4px;
+.tz-gallery .lightbox img {
     width: 100%;
+    border-radius: 0;
+    position: relative;
 }
 
-.caption-container {
-  text-align: center;
-  background-color: #333;
-  padding: 2px 16px;
-  color: white;
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
 }
 
-.demo {
-  opacity: 0.6;
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
 }
 
-img.hover-shadow {
-  transition: 0.3s
+.baguetteBox-button {
+    background-color: transparent !important;
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
 }
+
+
+/* ------ C L O S E   G A L L E R Y -------- */
 
 @-webkit-keyframes play-animation {
 	from {
@@ -814,11 +740,6 @@ img.hover-shadow {
 	border-top: 1px solid #EBEBEB;
 }
 
-/* -- Footer Logo -- */
-.footer-logo  .logo {
-	margin-top: 20px;
-	display: inline-block;
-}
 
 .footer-logo  .logo > img {
 	max-height:30px;
